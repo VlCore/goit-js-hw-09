@@ -7,7 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #F4E2D8;
   color: #212121;
   line-height: 1.5;
 }
@@ -15,4 +15,60 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+input {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 60px;
+  border-radius: 50;
+}
+
+button {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 100px;
+  border-radius: 50;
+}
+
+.timer {
+  display: flex;
+  gap: 60px;
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  color: #BA5370;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  border-radius: 0;
+  padding: 10px
+}
+
+.form button {
+  border-radius: 0;
+  padding: 10px;
 }
