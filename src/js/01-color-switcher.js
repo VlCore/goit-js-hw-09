@@ -12,12 +12,13 @@ startBtn.addEventListener('click', (event) => {
         intervalId = setInterval(() => {
             document.body.style.backgroundColor = getRandomHexColor();
         }, 1000);
+        stopBtn.disabled = false
     }
 });
 
 stopBtn.addEventListener('click', (event) => {
     clearInterval(intervalId);
     intervalId = null;
-    event.target.disabled = false;
+    event.target.disabled = true;
     startBtn.disabled = false;
 });
