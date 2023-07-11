@@ -7,9 +7,8 @@ const stopBtn = document.querySelector('[data-stop]')
 let intervalId = null 
 
 startBtn.addEventListener('click', (event) => {
-    const targetBtn = event.target;
     if (!intervalId) {
-        targetBtn.disabled = true;
+        event.target.disabled = true;
         intervalId = setInterval(() => {
             document.body.style.backgroundColor = getRandomHexColor();
         }, 1000);
@@ -17,8 +16,8 @@ startBtn.addEventListener('click', (event) => {
 });
 
 stopBtn.addEventListener('click', (event) => {
-    const targetBtn = event.target;
     clearInterval(intervalId);
     intervalId = null;
-    targetBtn.disabled = false;
+    event.target.disabled = false;
+    startBtn.disabled = false;
 });
